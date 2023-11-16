@@ -2,10 +2,37 @@
   {
     "owner": "cap-js",
     "repo": "cds-dbs",
-    "addedToBoUI5": "2023-11-16T11:37:57.868Z",
-    "type": "database",
-    "tags": ["sql"],
-    "license": "apache-2.0"
+    "subpath": "",
+    "subpackages": [
+      {
+        "name": "db-service",
+        "addedToBoUI5": "2023-10-07T00:00:00.000Z",
+        "type": "database",
+        "tags": ["database"],
+        "license": "apache-2.0"
+      },
+      {
+        "name": "hana",
+        "addedToBoUI5": "2023-10-07T00:00:00.000Z",
+        "type": "database",
+        "tags": ["database"],
+        "license": "apache-2.0"
+      },
+      {
+        "name": "postgres",
+        "addedToBoUI5": "2023-10-07T00:00:00.000Z",
+        "type": "database",
+        "tags": ["database"],
+        "license": "apache-2.0"
+      },
+      {
+        "name": "sqlite",
+        "addedToBoUI5": "2023-10-07T00:00:00.000Z",
+        "type": "database",
+        "tags": ["sqlite"],
+        "license": "apache-2.0"
+      }
+    ]
   },
   {
     "owner": "cap-js",
@@ -37,6 +64,46 @@
     "addedToBoUI5": "2023-11-16T11:37:57.868Z",
     "type": "btp",
     "tags": ["api,btp"],
+    "license": "apache-2.0"
+  },
+  {
+    "owner": "cap-js-community",
+    "repo": "feature-toggle-library",
+    "addedToBoUI5": "2023-11-16T11:37:57.868Z",
+    "type": "plugin",
+    "tags": ["lib"],
+    "license": "apache-2.0"
+  },
+  {
+    "owner": "cap-js-community",
+    "repo": "mtx-tool",
+    "addedToBoUI5": "2023-11-16T11:37:57.868Z",
+    "type": "plugin",
+    "tags": ["lib"],
+    "license": "apache-2.0"
+  },
+  {
+    "owner": "cap-js-community",
+    "repo": "cds-cucumber",
+    "addedToBoUI5": "2023-11-16T11:37:57.868Z",
+    "type": "plugin",
+    "tags": ["cucumber"],
+    "license": "apache-2.0"
+  },
+  {
+    "owner": "cap-js-community",
+    "repo": "odata-v2-adapter",
+    "addedToBoUI5": "2023-11-16T11:37:57.868Z",
+    "type": "plugin",
+    "tags": ["odata"],
+    "license": "apache-2.0"
+  },
+  {
+    "owner": "cap-js-community",
+    "repo": "event-queue",
+    "addedToBoUI5": "2023-11-16T11:37:57.868Z",
+    "type": "plugin",
+    "tags": ["lib"],
     "license": "apache-2.0"
   }
 ]
