@@ -15,7 +15,7 @@ export default class GitHubRepositoriesProvider {
 	static clonesJson: ClonesJson[] = [];
 
 	static octokit = new MyOctokit({
-		auth: "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",
+		auth: process.env.GITHUB_TOKEN,
 		throttle: {
 			onRateLimit: (retryAfter: any, options: any) => {
 				GitHubRepositoriesProvider.octokit.log.warn(`Request quota exhausted for request ${options.method} ${options.url}`);
