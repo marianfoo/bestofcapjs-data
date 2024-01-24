@@ -67,6 +67,14 @@
     "license": "apache-2.0"
   },
   {
+    "owner": "cap-js",
+    "repo": "cds-types",
+    "addedToBoUI5": "2024-01-24T12:00:00.000Z",
+    "type": "util",
+    "tags": ["typescript"],
+    "license": "apache-2.0"
+  },
+  {
     "owner": "cap-js-community",
     "repo": "feature-toggle-library",
     "addedToBoUI5": "2023-11-16T11:37:57.868Z",
@@ -105,5 +113,151 @@
     "type": "plugin",
     "tags": ["lib"],
     "license": "apache-2.0"
+  },
+  {
+    "owner": "cap-js-community",
+    "repo": "websocket",
+    "addedToBoUI5": "2024-01-24T12:00:00.000Z",
+    "type": "plugin",
+    "tags": ["websocket"],
+    "license": "apache-2.0"
+  },
+  {
+    "owner": "Soontao",
+    "repo": "cds-mysql",
+    "addedToBoUI5": "2024-01-24T12:00:00.000Z",
+    "type": "database",
+    "tags": ["mysql"],
+    "license": "mit"
+  },
+  {
+    "owner": "geert-janklaps",
+    "repo": "cds-launchpad-plugin",
+    "addedToBoUI5": "2024-01-24T12:00:00.000Z",
+    "type": "plugin",
+    "tags": ["launchpad"],
+    "license": "mit"
+  },
+  {
+    "owner": "mrbandler",
+    "repo": "cds-routing-handlers",
+    "addedToBoUI5": "2024-01-24T12:00:00.000Z",
+    "type": "plugin",
+    "tags": ["rounting,typescript"],
+    "license": "mit"
+  },
+  {
+    "owner": "sapmentors",
+    "repo": "cds-azure-ad",
+    "addedToBoUI5": "2024-01-24T12:00:00.000Z",
+    "type": "authentication",
+    "tags": ["azure"],
+    "license": "mit"
+  },
+  {
+    "owner": "MertSAP",
+    "repo": "CAPVAL",
+    "addedToBoUI5": "2024-01-24T12:00:00.000Z",
+    "type": "plugin",
+    "tags": ["validation"],
+    "license": "apache-2.0"
+  },
+  {
+    "owner": "SAP-samples",
+    "repo": "cloud-cap-samples",
+    "description": "test",
+    "author": "author",
+    "addedToBoUI5": "2024-01-24T12:00:00.000Z",
+    "type": "sampleapp",
+    "tags": ["sample"],
+    "license": "apache-2.0"
+  },
+  {
+    "owner": "SAP-samples",
+    "repo": "cap-sflight",
+    "addedToBoUI5": "2024-01-24T12:00:00.000Z",
+    "type": "sampleapp",
+    "tags": ["sample"],
+    "license": "apache-2.0"
+  },
+  {
+    "owner": "SAP-samples",
+    "repo": "ui5-cap-event-app",
+    "addedToBoUI5": "2024-01-24T12:00:00.000Z",
+    "type": "sampleapp",
+    "tags": ["sample"],
+    "license": "apache-2.0"
+  },
+  {
+    "owner": "SAP-samples",
+    "repo": "btp-full-stack-typescript-app",
+    "addedToBoUI5": "2024-01-24T12:00:00.000Z",
+    "type": "sampleapp",
+    "tags": ["sample"],
+    "license": "apache-2.0"
+  },
+  {
+    "owner": "SAP-samples",
+    "repo": "cap-service-integration-codejam",
+    "addedToBoUI5": "2024-01-24T12:00:00.000Z",
+    "type": "sampleapp",
+    "tags": ["sample"],
+    "license": "apache-2.0"
+  },
+  {
+    "owner": "SAP-samples",
+    "repo": "cap-bookshop-wdi5",
+    "addedToBoUI5": "2024-01-24T12:00:00.000Z",
+    "type": "sampleapp",
+    "tags": ["sample", "wdi5"],
+    "license": "apache-2.0"
+  },
+  {
+    "owner": "qmacro",
+    "repo": "odata-v4-and-cap",
+    "addedToBoUI5": "2024-01-24T12:00:00.000Z",
+    "type": "sampleapp",
+    "tags": ["sample"],
+    "license": "apache-2.0"
+  },
+  {
+    "owner": "ui5-community",
+    "repo": "hacking-away-sampleapp",
+    "addedToBoUI5": "2024-01-24T12:00:00.000Z",
+    "type": "sampleapp",
+    "tags": ["sample"],
+    "license": "apache-2.0"
+  },
+  {
+    "owner": "stockbal",
+    "repo": "cf-launchpad-notification-admin",
+    "addedToBoUI5": "2024-01-24T12:00:00.000Z",
+    "type": "sampleapp",
+    "tags": ["sample"],
+    "license": "mit"
+  },
+  {
+    "owner": "gregorwolf",
+    "repo": "bookshop-demo",
+    "addedToBoUI5": "2024-01-24T12:00:00.000Z",
+    "type": "sampleapp",
+    "tags": ["sample"],
+    "license": "mit"
+  },
+  {
+    "owner": "gregorwolf",
+    "repo": "pg-beershop",
+    "addedToBoUI5": "2024-01-24T12:00:00.000Z",
+    "type": "sampleapp",
+    "tags": ["sample"],
+    "license": "mit"
+  },
+  {
+    "owner": "p36-io",
+    "repo": "cap-ui5-gpt-chat",
+    "addedToBoUI5": "2024-01-24T12:00:00.000Z",
+    "type": "sampleapp",
+    "tags": ["sample"],
+    "license": "mit"
   }
 ]
