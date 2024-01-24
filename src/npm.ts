@@ -95,6 +95,10 @@ export default class NpmProvider {
 		let downloadsMonth = 0;
 		let downloadsYear = 0;
 
+		const sampleApps = packages.filter((p) => p.type === "sampleapp");
+		// filter packages that have the type sampleapp
+		packages = packages.filter((p) => p.type !== "sampleapp");
+
 		const bulkDownloads: IPackage[] = packages
 			.filter((p) => p.name.charAt(0) !== "@" && p.type !== "generator" && p.type !== "vscode" && p.type !== "application")
 			.map((p) => {
@@ -166,6 +170,8 @@ export default class NpmProvider {
 				console.error(`Error fetching npm metadata for ${source.name}`);
 			}
 		}
+		// merge packages that have the type sampleapp with the rest
+		packages = packages.concat(sampleApps);
 		return packages;
 	}
 

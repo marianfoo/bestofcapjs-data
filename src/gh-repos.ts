@@ -15,7 +15,7 @@ export default class GitHubRepositoriesProvider {
 	static clonesJson: ClonesJson[] = [];
 
 	static octokit = new MyOctokit({
-		auth: process.env.GITHUB_TOKEN,
+		auth: "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",
 		throttle: {
 			onRateLimit: (retryAfter: any, options: any) => {
 				GitHubRepositoriesProvider.octokit.log.warn(`Request quota exhausted for request ${options.method} ${options.url}`);
@@ -122,16 +122,22 @@ export default class GitHubRepositoriesProvider {
 	static async fetchRepo(source: Source, path: string, repoInfo: Package, sourcePackage: Source | SubPackage): Promise<IPackage> {
 		let packageReturn: IPackage = new Package();
 		try {
-			const data = await GitHubRepositoriesProvider.octokit.rest.repos.getContent({
-				mediaType: {
-					format: "raw",
-				},
-				owner: source.owner,
-				repo: source.repo,
-				path: `${path}package.json`,
-			});
-			const string = data.data.toString();
-			packageReturn = JSON.parse(string) as Package;
+			let data;
+			try {
+				data = await GitHubRepositoriesProvider.octokit.rest.repos.getContent({
+					mediaType: {
+						format: "raw",
+					},
+					owner: source.owner,
+					repo: source.repo,
+					path: `${path}package.json`,
+				});
+				const string = data.data.toString();
+				packageReturn = JSON.parse(string) as Package;
+			} catch (error) {
+				console.log("\x1b[31m%s\x1b[0m", `No package.json found for ${source.owner}/${source.repo}/${path}`);
+			}
+
 			packageReturn.description = packageReturn.description || repoInfo.description; // prefer description from package.json
 			packageReturn.type = sourcePackage.type;
 			packageReturn.tags = sourcePackage.tags;
@@ -148,9 +154,12 @@ export default class GitHubRepositoriesProvider {
 			packageReturn.vscodeInstalls = -1;
 			packageReturn.sourceType = sourcePackage.type;
 
-			// check if author is a object
+			// check if author is an object
 			if (packageReturn.author && typeof packageReturn.author === "object") {
 				packageReturn.author = packageReturn.author["name"];
+			}
+			if (repoInfo.author) {
+				packageReturn.author = repoInfo.author;
 			}
 
 			packageReturn.githublink = `${repoInfo.githublink}/tree/${repoInfo.defaultBranch}/${path}`;
@@ -167,25 +176,21 @@ export default class GitHubRepositoriesProvider {
 				readmeString = readmeString.replace('<img src="', `<img src="https://raw.githubusercontent.com/${source.owner}/${source.repo}/${repoInfo.defaultBranch}/`);
 				packageReturn.readme = readmeString;
 			} catch (error) {
-				// if no readme found in subpackage, try root to get any readme
-				if (sourcePackage) {
-					try {
-						const readme = await GitHubRepositoriesProvider.octokit.rest.repos.getContent({
-							mediaType: {
-								format: "raw",
-							},
-							owner: source.owner,
-							repo: source.repo,
-							path: `README.md`,
-						});
-						let readmeString = readme.data.toString();
-						readmeString = readmeString.replace('<img src="', `<img src="https://raw.githubusercontent.com/${source.owner}/${source.repo}/${repoInfo.defaultBranch}/`);
-						packageReturn.readme = readmeString;
-					} catch (error) {
-						console.log("\x1b[31m%s\x1b[0m", `No README found for ${packageReturn.githublink}`);
-					}
-				} else {
-					console.log("\x1b[31m%s\x1b[0m", `No README found for ${packageReturn.githublink}`);
+				// Try to fetch lowercase readme.md if uppercase README.md is not found
+				try {
+					const readme = await GitHubRepositoriesProvider.octokit.rest.repos.getContent({
+						mediaType: {
+							format: "raw",
+						},
+						owner: source.owner,
+						repo: source.repo,
+						path: `${path}readme.md`, // lowercase path
+					});
+					let readmeString = readme.data.toString();
+					readmeString = readmeString.replace('<img src="', `<img src="https://raw.githubusercontent.com/${source.owner}/${source.repo}/${repoInfo.defaultBranch}/`);
+					packageReturn.readme = readmeString;
+				} catch (lowerCaseError) {
+					console.log("\x1b[31m%s\x1b[0m", `No README.md or readme.md found for ${packageReturn.githublink}`);
 				}
 			}
 		} catch (error) {
