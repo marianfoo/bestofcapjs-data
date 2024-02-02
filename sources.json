@@ -35,6 +35,20 @@
     ]
   },
   {
+    "owner": "ui5-community",
+    "repo": "ui5-ecosystem-showcase",
+    "subpath": "packages",
+    "subpackages": [
+      {
+        "name": "cds-plugin-ui5",
+        "addedToBoUI5": "2024-02-02T00:00:00.000Z",
+        "type": "plugin",
+        "tags": ["ui5"],
+        "license": "apache-2.0"
+      }
+    ]
+  },
+  {
     "owner": "cap-js",
     "repo": "change-tracking",
     "addedToBoUI5": "2023-11-16T11:37:57.868Z",
