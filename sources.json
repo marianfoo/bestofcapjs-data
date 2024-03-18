@@ -273,5 +273,29 @@
     "type": "sampleapp",
     "tags": ["sample"],
     "license": "mit"
+  },
+  {
+    "owner": "gavdilabs",
+    "repo": "cap-batch",
+    "addedToBeUI5": "2024-03-18T05:56:42.177Z",
+    "type": "middleware",
+    "tags": ["typescript","batch"],
+    "license": "apache-2.0"
+  },
+  { 
+    "owner": "gavdilabs",
+    "repo": "caplog",
+    "addedToBeUI5": "2024-03-18T05:56:42.177Z",
+    "type": "middleware",
+    "tags": ["typescript","logging"],
+    "license": "apache-2.0"
+  },
+  {
+    "owner": "gavdilabs",
+    "repo": "cap-service-core",
+    "addedToBeUI5": "2024-03-18T05:56:42.177Z",
+    "type": "middleware",
+    "tags": ["typescript","utils"],
+    "license": "apache-2.0"
   }
 ]
