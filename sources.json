@@ -297,5 +297,13 @@
     "type": "middleware",
     "tags": ["typescript","utils"],
     "license": "apache-2.0"
+  },
+  {
+    "owner": "mauriciolauffer",
+    "repo": "cap-js-mockdata",
+    "addedToBeUI5": "2024-04-22T08:56:42.177Z",
+    "type": "plugin",
+    "tags": ["mock"],
+    "license": "mit"
   }
 ]
