@@ -279,15 +279,15 @@
     "repo": "cap-batch",
     "addedToBeUI5": "2024-03-18T05:56:42.177Z",
     "type": "middleware",
-    "tags": ["typescript","batch"],
+    "tags": ["typescript", "batch"],
     "license": "apache-2.0"
   },
-  { 
+  {
     "owner": "gavdilabs",
     "repo": "caplog",
     "addedToBeUI5": "2024-03-18T05:56:42.177Z",
     "type": "middleware",
-    "tags": ["typescript","logging"],
+    "tags": ["typescript", "logging"],
     "license": "apache-2.0"
   },
   {
@@ -295,7 +295,7 @@
     "repo": "cap-service-core",
     "addedToBeUI5": "2024-03-18T05:56:42.177Z",
     "type": "middleware",
-    "tags": ["typescript","utils"],
+    "tags": ["typescript", "utils"],
     "license": "apache-2.0"
   },
   {
@@ -305,5 +305,21 @@
     "type": "plugin",
     "tags": ["mock"],
     "license": "mit"
+  },
+  {
+    "owner": "vobu",
+    "repo": "cds-entra-id",
+    "addedToBeUI5": "2024-06-01T05:56:42.177Z",
+    "type": "authentication",
+    "tags": ["azure"],
+    "license": "apache-2.0"
+  },
+  {
+    "owner": "vneecious",
+    "repo": "sap-cap-sdm-plugin",
+    "addedToBeUI5": "2024-06-01T05:56:42.177Z",
+    "type": "tool",
+    "tags": ["sap"],
+    "license": "apache-2.0"
   }
 ]
