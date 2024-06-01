@@ -91,6 +91,8 @@ export interface Source {
 	tags: string[];
 	license: License;
 	liveDemoUrl: string;
+	repo: string;
+	description: string;
 }
 
 export interface SubPackage {
@@ -100,6 +102,7 @@ export interface SubPackage {
 	tags: string[];
 	license: License;
 	liveDemoUrl: string;
+	repo: string;
 }
 
 export interface DataJson {

@@ -138,7 +138,7 @@ export default class GitHubRepositoriesProvider {
 				console.log("\x1b[31m%s\x1b[0m", `No package.json found for ${source.owner}/${source.repo}/${path}`);
 			}
 
-			packageReturn.description = packageReturn.description || repoInfo.description; // prefer description from package.json
+			packageReturn.description = packageReturn.description || repoInfo.description || source.description; // prefer description from package.json
 			packageReturn.type = sourcePackage.type;
 			packageReturn.tags = sourcePackage.tags;
 			packageReturn.liveDemoUrl = source.liveDemoUrl || sourcePackage.liveDemoUrl;
@@ -153,6 +153,10 @@ export default class GitHubRepositoriesProvider {
 			packageReturn.updatedAt = repoInfo.updatedAt;
 			packageReturn.vscodeInstalls = -1;
 			packageReturn.sourceType = sourcePackage.type;
+
+			if (packageReturn.name === undefined) {
+				packageReturn.name = sourcePackage.repo;
+			}
 
 			// check if author is an object
 			if (packageReturn.author && typeof packageReturn.author === "object") {
