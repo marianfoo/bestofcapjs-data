@@ -232,7 +232,8 @@
     "addedToBoUI5": "2024-01-24T12:00:00.000Z",
     "type": "sampleapp",
     "tags": ["sample"],
-    "license": "apache-2.0"
+    "license": "apache-2.0",
+    "description": "This repository contains material related to a talk on what the SAP Cloud Application Programming Model (CAP) has to offer in terms of OData V4.0"
   },
   {
     "owner": "ui5-community",
