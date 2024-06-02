@@ -322,5 +322,13 @@
     "type": "tool",
     "tags": ["sap"],
     "license": "apache-2.0"
+  },
+  {
+    "owner": "lemaiwo",
+    "repo": "cds-plugin-handlers",
+    "addedToBoUI5": "2024-06-02T12:00:00.000Z",
+    "type": "plugin",
+    "tags": ["handlers,typescript"],
+    "license": "apache-2.0"
   }
 ]
