@@ -278,7 +278,7 @@
   {
     "owner": "gavdilabs",
     "repo": "cap-batch",
-    "addedToBeUI5": "2024-03-18T05:56:42.177Z",
+    "addedToBoUI5": "2024-03-18T05:56:42.177Z",
     "type": "middleware",
     "tags": ["typescript", "batch"],
     "license": "apache-2.0"
@@ -286,7 +286,7 @@
   {
     "owner": "gavdilabs",
     "repo": "caplog",
-    "addedToBeUI5": "2024-03-18T05:56:42.177Z",
+    "addedToBoUI5": "2024-03-18T05:56:42.177Z",
     "type": "middleware",
     "tags": ["typescript", "logging"],
     "license": "apache-2.0"
@@ -294,7 +294,7 @@
   {
     "owner": "gavdilabs",
     "repo": "cap-service-core",
-    "addedToBeUI5": "2024-03-18T05:56:42.177Z",
+    "addedToBoUI5": "2024-03-18T05:56:42.177Z",
     "type": "middleware",
     "tags": ["typescript", "utils"],
     "license": "apache-2.0"
@@ -302,7 +302,7 @@
   {
     "owner": "mauriciolauffer",
     "repo": "cap-js-mockdata",
-    "addedToBeUI5": "2024-04-22T08:56:42.177Z",
+    "addedToBoUI5": "2024-04-22T08:56:42.177Z",
     "type": "plugin",
     "tags": ["mock"],
     "license": "mit"
@@ -310,7 +310,7 @@
   {
     "owner": "vobu",
     "repo": "cds-entra-id",
-    "addedToBeUI5": "2024-06-01T05:56:42.177Z",
+    "addedToBoUI5": "2024-06-01T05:56:42.177Z",
     "type": "authentication",
     "tags": ["azure"],
     "license": "apache-2.0"
@@ -318,7 +318,7 @@
   {
     "owner": "vneecious",
     "repo": "sap-cap-sdm-plugin",
-    "addedToBeUI5": "2024-06-01T05:56:42.177Z",
+    "addedToBoUI5": "2024-06-01T05:56:42.177Z",
     "type": "tool",
     "tags": ["sap"],
     "license": "apache-2.0"
