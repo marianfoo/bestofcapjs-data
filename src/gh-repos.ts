@@ -59,6 +59,13 @@ export default class GitHubRepositoriesProvider {
 						}
 					}
 
+					if (packageInfo.type === "sampleapp") {
+						packageInfo.downloads365 = -1;
+						packageInfo.downloadsCurrentFortnight = -1;
+						packageInfo.downloadsCurrentMonth = -1;
+						packageInfo.downloadsFortnightGrowth = -1;
+					}
+
 					packages.push(packageInfo);
 				}
 			} else {
