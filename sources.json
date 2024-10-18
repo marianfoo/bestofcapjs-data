@@ -330,5 +330,13 @@
     "type": "plugin",
     "tags": ["handlers,typescript"],
     "license": "apache-2.0"
+  },
+  {
+    "owner": "lemaiwo",
+    "repo": "ui5-cap-serverside-rendering-plugin",
+    "addedToBoUI5": "2024-10-19T12:00:00.000Z",
+    "type": "plugin",
+    "tags": ["serversiderendering","SSR","pre-rendering","ui5"],
+    "license": "apache-2.0"
   }
 ]
