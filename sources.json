@@ -338,5 +338,13 @@
     "type": "plugin",
     "tags": ["serversiderendering","SSR","pre-rendering","ui5"],
     "license": "apache-2.0"
+  },
+  {
+    "owner": "mikezaschka",
+    "repo": "cds-kafka",
+    "addedToBoUI5": "2025-01-15T11:37:57.868Z",
+    "type": "plugin",
+    "tags": ["plugin", "messaging", "kafka"],
+    "license": "mit"
   }
 ]
