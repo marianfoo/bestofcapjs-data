@@ -346,5 +346,13 @@
     "type": "plugin",
     "tags": ["plugin", "messaging", "kafka"],
     "license": "mit"
+  },
+   {
+    "owner": "mikezaschka",
+    "repo": "cds-caching",
+    "addedToBoUI5": "2025-01-24T11:37:57.868Z",
+    "type": "plugin",
+    "tags": ["plugin", "caching", "redis"],
+    "license": "mit"
   }
 ]
