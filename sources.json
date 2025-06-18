@@ -354,5 +354,13 @@
     "type": "plugin",
     "tags": ["plugin", "caching", "redis"],
     "license": "mit"
+  },
+   {
+    "owner": "abdulbasitg",
+    "repo": "cds-numberrange-pluging",
+    "addedToBoUI5": "2025-06-18T11:37:57.868Z",
+    "type": "plugin",
+    "tags": ["numbers"],
+    "license": "mit"
   }
 ]
