@@ -370,5 +370,13 @@
     "type": "plugin",
     "tags": ["mcp", "llm"],
     "license": "apache-2.0"
+  },
+  {
+    "owner": "salvatorela",
+    "repo": "cap-plugin-adobe-forms",
+    "addedToBoUI5": "2026-04-25T16:42:57.868Z",
+    "type": "plugin",
+    "tags": ["adobeform"],
+    "license": "mit"
   }
 ]
