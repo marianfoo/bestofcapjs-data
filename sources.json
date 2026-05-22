@@ -394,5 +394,13 @@
     "type": "plugin",
     "tags": ["sap", "cap", "cds", "snowflake", "database", "adapter", "odata"],
     "license": "apache-2.0"
+  },
+  {
+    "owner": "salvatorelaspata",
+    "repo": "cap-plugin-adobe-forms",
+    "addedToBoUI5": "2026-04-25T16:42:57.868Z",
+    "type": "plugin",
+    "tags": ["adobeform", "btp", "sap", "plugin"],
+    "license": "mit"
   }
 ]
