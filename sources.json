@@ -370,5 +370,13 @@
     "type": "plugin",
     "tags": ["mcp", "llm"],
     "license": "apache-2.0"
+  },
+  {
+    "owner": "Root3287",
+    "repo": "cap-segw",
+    "addedToBoUI5": "2025-12-06T00:00:00.000Z",
+    "type": "plugin",
+    "tags": ["segw", "abap", "generator", "odata", "odatav2", "odatav4", "plugin"],
+    "license": "apache-2.0"
   }
 ]
