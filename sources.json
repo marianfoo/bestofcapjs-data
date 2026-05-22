@@ -378,5 +378,21 @@
     "type": "plugin",
     "tags": ["segw", "abap", "generator", "odata", "odatav2", "odatav4", "plugin"],
     "license": "apache-2.0"
+  },
+  {
+    "owner": "sleibach",
+    "repo": "cap-collaborative-draft",
+    "addedToBoUI5": "2026-05-11T20:00:00.000Z",
+    "type": "plugin",
+    "tags": ["cds", "cap", "fiori", "draft", "collaborative"],
+    "license": "apache-2.0"
+  },
+  {
+    "owner": "sleibach",
+    "repo": "cap-snowflake",
+    "addedToBoUI5": "2026-05-11T21:00:00.000Z",
+    "type": "plugin",
+    "tags": ["sap", "cap", "cds", "snowflake", "database", "adapter", "odata"],
+    "license": "apache-2.0"
   }
 ]
