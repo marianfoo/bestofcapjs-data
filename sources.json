@@ -396,6 +396,14 @@
     "license": "apache-2.0"
   },
   {
+    "owner": "sleibach",
+    "repo": "cap-n8n",
+    "addedToBoUI5": "2026-06-15T20:18:58.000Z",
+    "type": "plugin",
+    "tags": ["cap", "cds", "n8n", "workflow", "automation", "sap"],
+    "license": "apache-2.0"
+  },
+  {
     "owner": "salvatorelaspata",
     "repo": "cap-plugin-adobe-forms",
     "addedToBoUI5": "2026-04-25T16:42:57.868Z",
