@@ -410,5 +410,21 @@
     "type": "plugin",
     "tags": ["adobeform", "btp", "sap", "plugin"],
     "license": "mit"
+  },
+  {
+    "owner": "mikezaschka",
+    "repo": "cds-data-federation",
+    "addedToBoUI5": "2026-07-18T11:37:57.868Z",
+    "type": "plugin",
+    "tags": ["plugin", "federation", "replication", "odata", "remote services"],
+    "license": "mit"
+  },
+  {
+    "owner": "mikezaschka",
+    "repo": "cds-data-pipeline",
+    "addedToBoUI5": "2026-07-18T11:37:57.868Z",
+    "type": "plugin",
+    "tags": ["plugin", "replication", "odata", "remote services", "rest"],
+    "license": "mit"
   }
 ]
