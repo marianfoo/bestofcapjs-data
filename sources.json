@@ -137,14 +137,6 @@
     "license": "apache-2.0"
   },
   {
-    "owner": "Soontao",
-    "repo": "cds-mysql",
-    "addedToBoUI5": "2024-01-24T12:00:00.000Z",
-    "type": "database",
-    "tags": ["mysql"],
-    "license": "mit"
-  },
-  {
     "owner": "geert-janklaps",
     "repo": "cds-launchpad-plugin",
     "addedToBoUI5": "2024-01-24T12:00:00.000Z",
@@ -413,18 +405,23 @@
   },
   {
     "owner": "mikezaschka",
-    "repo": "cds-data-federation",
-    "addedToBoUI5": "2026-07-18T11:37:57.868Z",
-    "type": "plugin",
-    "tags": ["plugin", "federation", "replication", "odata", "remote services"],
-    "license": "mit"
-  },
-  {
-    "owner": "mikezaschka",
-    "repo": "cds-data-pipeline",
-    "addedToBoUI5": "2026-07-18T11:37:57.868Z",
-    "type": "plugin",
-    "tags": ["plugin", "replication", "odata", "remote services", "rest"],
-    "license": "mit"
+    "repo": "cds-data",
+    "subpath": "packages",
+    "subpackages": [
+      {
+        "name": "cds-data-federation",
+        "addedToBoUI5": "2026-07-18T11:37:57.868Z",
+        "type": "plugin",
+        "tags": ["plugin", "federation", "replication", "odata", "remote services"],
+        "license": "mit"
+      },
+      {
+        "name": "cds-data-pipeline",
+        "addedToBoUI5": "2026-07-18T11:37:57.868Z",
+        "type": "plugin",
+        "tags": ["plugin", "replication", "odata", "remote services", "rest"],
+        "license": "mit"
+      }
+    ]
   }
 ]
