@@ -423,5 +423,19 @@
         "license": "mit"
       }
     ]
+  },
+  {
+    "owner": "cap2UI5",
+    "repo": "cap2UI5",
+    "subpath": "",
+    "subpackages": [
+      {
+        "name": "plugin",
+        "addedToBoUI5": "2026-09-30T12:00:00.000Z",
+        "type": "plugin",
+        "tags": ["ui5", "abap2ui5", "abap"],
+        "license": "mit"
+      }
+    ]
   }
 ]
